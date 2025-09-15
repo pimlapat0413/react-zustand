@@ -1,0 +1,211 @@
+.course-list-container {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  align-self: center;
+}
+
+.header-section {
+  margin-bottom: 24px;
+}
+
+.header-section h2 {
+  color: #2c3e50;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.summary-info {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #34495e;
+  font-size: 0.9rem;
+}
+
+.info-value {
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.info-value.gpa {
+  color: #27ae60;
+  font-size: 1.2rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #7f8c8d;
+}
+
+.empty-state p {
+  margin: 8px 0;
+}
+
+.course-table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.course-table th {
+  background: linear-gradient(135deg, #34495e, #2c3e50);
+  color: white;
+  padding: 12px 8px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.course-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+
+.course-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.course-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.course-code {
+  font-weight: 700;
+  color: #3498db;
+  font-family: 'Courier New', monospace;
+}
+
+.course-name-th {
+  font-weight: 600;
+  color: #2c3e50;
+  max-width: 200px;
+}
+
+.course-name-en {
+  color: #5a6c7d;
+  font-style: italic;
+  max-width: 200px;
+}
+
+.credits {
+  text-align: center;
+  font-weight: 700;
+  color: #8e44ad;
+}
+
+.instructor {
+  color: #34495e;
+  max-width: 150px;
+}
+
+.grade-cell {
+  text-align: center;
+}
+
+.grade-select {
+  padding: 6px 8px;
+  border: 2px solid #dee2e6;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 120px;
+}
+
+.grade-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.actions {
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .course-table {
+    font-size: 0.8rem;
+  }
+  
+  .course-table th,
+  .course-table td {
+    padding: 8px 6px;
+  }
+  
+  .course-name-th,
+  .course-name-en {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-list-container {
+    padding: 16px;
+  }
+  
+  .summary-info {
+    flex-direction: column;
+  }
+  
+  .info-card {
+    justify-content: space-between;
+  }
+  
+  .course-table-container {
+    border-radius: 6px;
+  }
+  
+  .course-table {
+    font-size: 0.75rem;
+  }
+  
+  .course-table th,
+  .course-table td {
+    padding: 6px 4px;
+  }
+  
+  .course-name-th,
+  .course-name-en,
+  .instructor {
+    max-width: 120px;
+    word-wrap: break-word;
+  }
+  
+  .grade-select {
+    font-size: 0.75rem;
+    max-width: 100px;
+  }
+}
