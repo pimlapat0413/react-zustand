@@ -1,9 +1,8 @@
-import React from 'react'
 import { useCourseStore } from '../store/courseStore'
 import DropButton from './DropButton'
 import './CourseList.css'
 
-const CourseList: React.FC = () => {
+const CourseList = () => {
   const { enrolledCourses, updateGrade, getTotalCredits, calculateGPA } = useCourseStore()
 
   const handleGradeChange = (courseId: string, grade: string) => {

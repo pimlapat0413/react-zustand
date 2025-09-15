@@ -1,8 +1,7 @@
-import React from 'react'
 import { useCourseStore } from '../store/courseStore'
 import './CourseDrop.css'
 
-const CourseDrop: React.FC = () => {
+const CourseDrop = () => {
   const droppedCourses = useCourseStore((state) => state.droppedCourses)
 
   const getTotalDroppedCredits = () => {

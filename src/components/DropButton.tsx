@@ -1,4 +1,3 @@
-import React from 'react'
 import { useCourseStore } from '../store/courseStore'
 import './DropButton.css'
 
@@ -7,7 +6,7 @@ interface DropButtonProps {
   courseName: string
 }
 
-const DropButton: React.FC<DropButtonProps> = ({ courseId, courseName }) => {
+const DropButton = ({ courseId, courseName }: DropButtonProps) => {
   const dropCourse = useCourseStore((state) => state.dropCourse)
 
   const handleDrop = () => {

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useCourseStore } from '../store/courseStore'
 import './CourseForm.css'
 
-const CourseForm: React.FC = () => {
+const CourseForm = () => {
   const addCourse = useCourseStore((state) => state.addCourse)
   
   const [formData, setFormData] = useState({

@@ -1,4 +1,3 @@
-import React from 'react'
 import CourseForm from './components/CourseForm'
 import CourseList from './components/CourseList'
 import CourseDrop from './components/CourseDrop'
